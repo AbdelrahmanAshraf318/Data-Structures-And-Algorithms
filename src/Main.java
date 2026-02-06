@@ -1,40 +1,49 @@
 public class Main {
     public static void main(String[] args) {
 
-        Stack<Integer> stack = new Stack<>();
+//        Stack<Integer> stack = new Stack<>();
+//
+//        // Test push
+//        System.out.println("Pushing elements...");
+//        stack.push(10);
+//        stack.push(20);
+//        stack.push(30);
+//
+//        // Expected order (top -> bottom): 30, 20, 10
+//
+//        // Test pop
+//        System.out.println("Popping elements...");
+//        System.out.println(stack.pop()); // 30
+//        System.out.println(stack.pop()); // 20
+//        System.out.println(stack.pop()); // 10
+//
+//        // Test pop on empty stack (should throw exception)
+//        try
+//        {
+//            stack.pop();
+//        }
+//        catch (RuntimeException e)
+//        {
+//            System.out.println("Exception caught: " + e.getMessage());
+//        }
+//
+//        // Test stack with String
+//        Stack<String> stringStack = new Stack<>();
+//        stringStack.push("Java");
+//        stringStack.push("Spring");
+//        stringStack.push("Boot");
+//
+//        System.out.println(stringStack.pop()); // Boot
+//        System.out.println(stringStack.pop()); // Spring
+//        System.out.println(stringStack.pop()); // Java
 
-        // Test push
-        System.out.println("Pushing elements...");
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
 
-        // Expected order (top -> bottom): 30, 20, 10
+        BinarySearch binarySearch = new BinarySearch(new int[]{1, 2, 3, 4, 5, 6, 7, 10});
+        int index = binarySearch.search(20);
+        if(index == -1)
+            System.out.println("Element NOT Found");
+        else
+            System.out.println("Element found at index = " + index);
 
-        // Test pop
-        System.out.println("Popping elements...");
-        System.out.println(stack.pop()); // 30
-        System.out.println(stack.pop()); // 20
-        System.out.println(stack.pop()); // 10
-
-        // Test pop on empty stack (should throw exception)
-        try
-        {
-            stack.pop();
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println("Exception caught: " + e.getMessage());
-        }
-
-        // Test stack with String
-        Stack<String> stringStack = new Stack<>();
-        stringStack.push("Java");
-        stringStack.push("Spring");
-        stringStack.push("Boot");
-
-        System.out.println(stringStack.pop()); // Boot
-        System.out.println(stringStack.pop()); // Spring
-        System.out.println(stringStack.pop()); // Java
     }
 }

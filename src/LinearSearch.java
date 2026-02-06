@@ -1,11 +1,9 @@
 public class LinearSearch
 {
-    private int element;
     private int[] arr;
 
-    public LinearSearch(int element, int[] arr)
+    public LinearSearch(int[] arr)
     {
-        this.element = element;
         this.arr = arr;
     }
 
